@@ -1,0 +1,534 @@
+body {
+    font-family: 'Off-White';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333333;
+    overflow-x: hidden;
+}
+/* Defualt color for headers and paragraphs */
+h2, h3 {
+  color: white;
+}
+p, li a{
+  color: white;
+}
+ul {
+  list-style-type: none;
+}
+
+/* Hide and show elements */
+.hidden {
+  opacity: 0;
+  transform: translateY(20%);
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: 1s ease;
+
+}
+
+/* z-index for home */
+#home h2, h3, p, ul, li, img{
+  z-index: 0;
+}
+
+/* Opening home page */ 
+.container {
+  height: 100vh;
+}
+
+.opening-page {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  z-index: 1500;
+}
+
+/* Opening page name and image */
+.opening-page-main {
+  margin-left: 10%;
+  display: flex;
+  align-items: flex-start;
+  font-size: 15vw;
+  transform: translateX(17%);
+  animation: appear-first 2.5s;
+  margin-top: 15%;
+}
+
+/* Brand saying below */
+.brand-saying {
+  text-align: center;
+  font-size: 3vw;
+  padding-top: 5%;
+  margin-top: 10%;
+  transform: translateX(27%);
+  animation: appear-third 15s;
+  font-family: "Cedarville Cursive";
+  font-weight: 100;
+}
+
+/* Opening page saying */
+.opening-page-saying {
+  transform: translateX(50vw);
+  font-size: 1.5vw;
+  animation: appear-second 5s;
+}
+
+/* Animations for the opening page */
+@keyframes appear-first {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes appear-second {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes appear-third {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* section divider */
+.section-divider {
+  position: relative;
+  width: 100%;
+  background-color: #F2F2F2;
+  margin: 0 auto;
+}
+.section-divider p {
+  margin-top: 20%;
+}
+
+.section-divider .sub-menu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  list-style: none;
+  font-size: 1.5vw;
+  color: #333333;
+}
+
+.section-divider .sub-menu li {
+  margin: 0;
+  color: #333333;
+  font-family: 'Off-White';
+}
+
+.section-divider .sub-menu li a {
+  text-decoration: none; 
+  color: #333333;
+}
+
+.section-divider .sub-menu li:first-child {
+  margin-left: 5%;
+  margin-top: -2%;
+}
+
+.section-divider .sub-menu li:nth-child(2) {
+  font-family: "Cedarville Cursive", cursive;
+  margin-top: 0%;
+  font-size: 2vw;
+  margin-right: 7%;
+  font-weight: bolder;
+}
+
+.section-divider .sub-menu li:last-child {
+  margin-top: -2%;
+  margin-right: 5%;
+}
+
+/* Sub nav */
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2000; 
+}
+
+.sub-nav .sub-menu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  list-style: none;
+  font-size: 120%;
+  color: #F2F2F2;
+  background-color: #333333;
+}
+
+.sub-nav .sub-menu li {
+  margin: 0;
+  color: #F2F2F2;
+  font-family: 'Off-White';
+}
+
+.sub-nav .sub-menu li a {
+  text-decoration: none; 
+  color: #F2F2F2;
+}
+
+.sub-nav .sub-menu li:first-child {
+  margin-left: 5%;
+  margin-top: 0%;
+}
+
+.sub-nav .sub-menu li:nth-child(4) {
+  font-family: "Cedarville Cursive", cursive;
+  margin-top: 0%;
+  font-size: 170%;
+  margin-right: -5%;
+  font-weight: bolder;
+}
+
+.sub-nav .sub-menu li:last-child {
+  margin-top: -2%;
+  margin-right: 5%;
+}
+
+
+/* section 1 */
+.section-1-container {
+  font-family: 'Off-White';
+}
+.section-1 {
+  background-color: #F2F2F2;
+  width: 100%;
+  margin: auto;
+  height: 100vh;
+}
+
+.section-1 h2 {
+  color: #333333;
+  font-size: 7vw;
+  text-align: center;
+}
+
+.section-1 h3 {
+  color: #333333;
+  font-size: 100%;
+  text-align: center;
+  font-weight: 100;
+}
+
+.section-1 p {
+  color: #333333;
+  text-align: center;
+  margin-top: 7%;
+  font-size: 1vw;
+}
+
+.section-1 p:last-child {
+  width: 50%;
+  margin-top: 8%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Section 2 divider */
+.section-2-container .section-divider {
+  border-top: 2px solid #333333;
+  align-items: center;
+  width: 90%;
+  z-index: 0;
+}
+/* Section 2 container */
+.section-2-container {
+  height: 260vh;
+  background-color: #F2F2F2;
+}
+
+/* Section 2 */
+.section-2 h2 {
+  position: relative;
+  text-align: center;
+  color: #333333;
+}
+
+/* First part for section 2 */
+.section-2-desc ul {
+  font-family: 'Off-White';
+  display: flex;
+  margin-top: 5%;
+  justify-content: space-between;
+  padding: 0%;
+}
+
+.section-2-desc li {
+  width: 40%;
+}
+
+/* First part pictures */
+.section-2-img ul {
+  display: flex;
+  filter: grayscale(70%);
+  margin-top: 5%;
+  justify-content: space-between;
+  padding: 0%;
+}
+
+/* Individual sizes for each pictures */
+.image-1 {
+  height: 20vw;
+  width: 15vw;
+}
+
+.video-1 {
+  height: 25vw;
+  width: 15vw;
+}
+
+.image-2 {
+  height: 20vw;
+  width: 15vw;
+}
+
+.image-3 {
+  height: 27vw;
+  width: 17vw;
+}
+
+/* Middle part for section 2 */
+.section-2-mid .section-divider {
+  border-bottom: 2px solid #333333;
+  width: 90%;
+  align-items: center;
+}
+
+.section-2-mid ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+.section-2-mid h2{
+  color: #333333;
+  font-family: 'Off-White';
+  font-size: 5vw;
+  margin-top: 60%;
+}
+
+.section-2-mid h3 {
+  color: #333333;
+  font-family: 'Off-White';
+  font-size: 2vw;
+}
+
+.section-2-mid iframe {
+  height: 50vh;
+  width: 35vw;
+}
+
+/* Bottom part for section 2 */
+.section-2-bottom .section-divider {
+  border-bottom: 2px solid #333333;
+  width: 90%;
+  align-items: center;
+}
+
+.section-2-bottom ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+.section-2-bottom h2 {
+  color: #333333;
+  font-family: 'Off-White';
+  font-size: 5vw;
+  margin-top: 35%;
+}
+
+.section-2-bottom h3 {
+  color: #333333;
+  font-family: 'Off-White';
+  font-size: 2vw;
+}
+
+.section-2-bottom iframe {
+  height: 100%;
+  width: 50vw;
+}
+
+/* Section 3 divider */
+.section-3-divider {
+  border-top: 2px solid #F2F2F2;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15%;
+}
+
+.section-3-divider-ul {
+  list-style: none;
+  padding: 0%;
+}
+
+.section-3-divider-ul li {
+  display: inline-block;
+}
+
+.section-3-divider-ul img {
+  display: block;
+}
+
+.section-3-divider-ul img:last-child {
+  padding-left: 10%;
+}
+
+/* Section 3 */
+.section-3-container {
+  font-family: 'camden-ryax';
+  background-color: #333333;
+  height: 10vh;
+}
+
+.section-3-container img {
+  filter: grayscale(80%);
+  margin-left: 50%;
+  width: 100%;
+  opacity: 0.3;
+  transform: translateY(-30%);
+  justify-content: space-between;
+}
+
+.section-3-container h1 {
+  color: #F2F2F2;
+  font-size: 350%;
+}
+
+.section-3-container p {
+  font-size: 350%;
+  padding-top: 2%;
+  margin-left: 15%;
+  font-weight: 1000;
+}
+
+/* Section 3 middle */
+.section-3-mid {
+  height: 100vh;
+}
+.section-3-mid .section-3-divider {
+  border-bottom: 2px solid #F2F2F2;
+  align-items: center;
+  width: 90%;
+}
+
+.section-3-mid ul {
+  justify-content: space-between;
+  display: flex;
+  padding: 0%;
+}
+
+.section-3-mid li {
+  display: inline-block;
+}
+
+.section-3-mid h2 {
+  font-size: 5vw;
+}
+
+.section-3-mid p {
+  font-size: 3vw;
+}
+
+.section-3-mid ul:nth-child(2) {
+  width: 90%;
+}
+
+/* Divider line for list */
+.list-divider {
+  border-top: 2px solid #F2F2F2;
+  width: 90%;
+}
+
+.list-divider-bottom {
+  border-top: 2px solid #F2F2F2;
+  width: 80%;
+}
+
+/* Section 4 */
+.section-4-container {
+  background-color: #F2F2F2;
+  height: 100vh;
+  transform: translateY(250vh);
+}
+
+.section-4 h2{
+  color: #333333;
+  font-size: 15vw;
+  text-align: center;
+  font-weight: 500;
+  transform: translateY(7vh);
+}
+
+.section-4 h3 {
+  color: #333333;
+  font-size: 2vw;
+  text-align: center;
+  width: 90%;
+  font-family: "Cedarville Cursive", cursive;
+}
+
+/* Section 4 saying */
+.section-4-saying {
+  transform: translateY(5vw);
+}
+
+/* Bottom Nav */
+.bottom-nav {
+  border-top: 2px solid #333333;
+  width: 100%;
+  transform: translateY(244vh);
+}
+
+.bottom-nav h2 {
+  display: inline;
+  color: #333333;
+}
+
+@keyframes moveText {
+  0% {
+      transform: translateX(-100%);
+  }
+  100% {
+      transform: translateX(70%);
+  }
+}
+
+.moving-text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  white-space: nowrap; /* Prevent text from wrapping */
+  animation: moveText 20s linear infinite;
+}
+
+
